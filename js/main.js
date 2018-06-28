@@ -1,4 +1,25 @@
 //con esto tomo el numero de codigo que ingrese el usuario
+saldo = () => 
+{
+    document.getElementById("").innerHTML
+}
+tarifa = () => 
+{
+    document.getElementById("").innerHTML
+}
+perfil = () => 
+{
+    document.getElementById("").innerHTML
+}
+preguntas = () => 
+{
+    document.getElementById("#navbarToggleExternalContentTwo").innerHTML
+}
+home = () => 
+{
+    document.getElementById("").innerHTML
+}
+
 let input = document.getElementById("boton").value;
 
 function getBip(num){
@@ -26,6 +47,9 @@ function getBip(num){
     }
     
      console.log(getBip(''));
+
+
+
 
         
   

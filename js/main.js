@@ -1,52 +1,27 @@
 //con esto tomo el numero de codigo que ingrese el usuario
-saldo = () => 
-{
-    document.getElementById("").innerHTML
-}
-tarifa = () => 
-{
-    document.getElementById("").innerHTML
-}
-perfil = () => 
-{
-    document.getElementById("").innerHTML
-}
-preguntas = () => 
-{
-    document.getElementById("#navbarToggleExternalContentTwo").innerHTML
-}
-home = () => 
-{
-    document.getElementById("").innerHTML
-}
 
-let input = document.getElementById("boton").value;
-
-function getBip(num){
-
-        
+let input = document.querySelector('input');
+        // 13 is enter
           // code for enter
-          boton.addEventListener("keypress",(enter)=>{
+          input.addEventListener("keypress",(enter)=>{
             let key = enter.which || enter.keyCode;
-            if (key === 13) {// 13 is enter
-                let num = boton.value;
-                boton.value = ""; //limpiar casilla
-                //container.innerHTML="";
-
+            if (key === 13) {
+            let num = input.value;
+             
 
           fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${num}`) 
             .then(response => response.json())
             .then(data => {
-              
-                console.log(data);
                 
-             })
-            }
-    
-        })
-    }
-    
-     console.log(getBip(''));
+                const datosBip= Object.values(data)//con object.values entro al obj
+                let numeroTarjeta = datosBip[0];//llamo los datos dentro del array
+                let saldoTarjeta = datosBip[4];
+                let fechaSaldo = datosBip[5];
+              
+                console.log(saldoTarjeta);//muestra x  consola el saldo
+            })   
+        }    
+    })
 
 
 

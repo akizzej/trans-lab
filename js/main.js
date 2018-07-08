@@ -13,17 +13,22 @@ let input = document.querySelector('input');
             .then(response => response.json())
             .then(data => {
                 
-                const datosBip= Object.values(data)//con object.values entro al obj
+                let datosBip= Object.values(data)//con object.values entro al obj
                 let numeroTarjeta = datosBip[0];//llamo los datos dentro del array
-                let saldoTarjeta = datosBip[4];
-                let fechaSaldo = datosBip[5];
+                let saldoTarjeta = datosBip[2];
+                let fechaSaldo = datosBip[3];
               
-                console.log(saldoTarjeta);//muestra x  consola el saldo
+                //console.log(saldoTarjeta);//muestra x  consola el saldo
+                document.getElementById("Saldo").innerHTML=saldoTarjeta; //imprime x  consola el saldo
             })   
         }    
     })
+    
 
-
+    
+  
+   
+          
 
 
         

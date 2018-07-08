@@ -1,0 +1,46 @@
+body{
+    background-color: lightgrey;
+}
+
+.saldo{
+    width:50%;
+    height:  px;
+    background-color: #FFCC00;
+    color: white;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: em;
+    margin-bottom: em;
+    margin-left: em;
+    margin-right: em;
+    text-align: center;
+
+}
+.letras::placeholder{
+    color: grey;
+}
+.botones{
+    width: 100%;
+    float: left;
+    margin-top: em;
+    margin-bottom: 1em;
+    padding-left:em;
+    text-align: center;
+}
+.separacion{
+    margin-top: 10em;
+}
+
+.nav-wrapper{
+    background-color: black;
+    color: white;
+}
+.waves-effect {
+    background-color: #FFCC00;
+}
+
+.waves-effect:hover{
+   
+    background-color: #FFCC00;
+  }
+
